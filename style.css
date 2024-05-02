@@ -149,7 +149,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: auto;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -214,7 +214,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 3rem;
 }
 
 /* BUTTONS */
@@ -222,14 +222,14 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 2rem;
 }
 
@@ -372,6 +372,7 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
+  object-fit: cover;
   width: 90%;
   height: 90%;
 }
@@ -382,8 +383,8 @@ article .icon {
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
+  border-color: rgb(226, 225, 225);
 }
 
 /* CONTACT */
@@ -436,3 +437,47 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Certificates */
+/* General styles for the certificates section containers */
+#certificates {
+  position: relative;
+  height: 140vh;
+}
+
+.experience-details-container {
+  max-width: 2200px; /* Limit the maximum width of the container */
+  margin: auto; /* Center align the container */
+  padding: 20px;
+}
+
+.details-container {
+  width: 100%; /* Full width for smaller screens */
+  max-width: auto; /* Maximum width of each certificate container */
+  margin: 10px auto; /* Center align and provide some margin */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  background-color: #ffffff; /* White background */
+}
+
+.project-img {
+  width: 100%; /* Full width of its container */
+  height: 300px; /* Maintain aspect ratio */
+  max-height: 300px; /* Maximum image height */
+  object-fit: contain; /* Ensure the image fits well without distortion */
+}
+
+.btn-container {
+  text-align: center; /* Center-align the buttons */
+}
+
+.btn {
+  padding: 8px 16px; /* Padding around the text */
+  margin-top: 10px; /* Space above the button */
+}
+
+
+
+
+
+
