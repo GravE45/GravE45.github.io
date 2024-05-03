@@ -169,16 +169,14 @@ section {
   }
 
   .section__pic-container img {
-    border-radius: 20px; /* Curves the edges of the image */
+    border-radius: 50px; /* Curves the edges of the image */
+    display: flex;
+  height: 450px;
+  width: 350px;
+  margin: auto 0;
   }
   
-  .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-  border-radius: 20px; /* Added border-radius to curve the edges of the image */
-  }
+ 
   
   .section__text {
   align-self: center;
@@ -442,7 +440,7 @@ footer p {
 /* General styles for the certificates section containers */
 #certificates {
   position: relative;
-  height: 140vh;
+  height: 200vh;
 }
 
 .experience-details-container {
