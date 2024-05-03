@@ -75,6 +75,10 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  position: fixed; /* or 'absolute' depending on your layout needs */
+  top: 20px; /* Adjust as necessary for your design */
+  right: 20px;
+  z-index: 1000; /* Ensures it's above other content */
 }
 
 .hamburger-icon {
@@ -103,6 +107,12 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
+.menu-links.open {
+    max-height: 500px; /* Or enough to show all items */
+    /* Ensure visibility */
+    display: block;
+}
+
 
 .menu-links a {
   display: block;
@@ -165,7 +175,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 90vh;
   }
 
   .section__pic-container img {
@@ -391,7 +401,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-info-upper-container {
@@ -428,7 +438,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 2vh;
   margin: 0 1rem;
 }
 
