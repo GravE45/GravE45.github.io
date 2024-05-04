@@ -75,10 +75,6 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-  position: fixed; /* or 'absolute' depending on your layout needs */
-  top: 20px; /* Adjust as necessary for your design */
-  right: 20px;
-  z-index: 1000; /* Ensures it's above other content */
 }
 
 .hamburger-icon {
@@ -107,18 +103,12 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
-.menu-links.open {
-    max-height: 500px; /* Or enough to show all items */
-    /* Ensure visibility */
-    display: block;
-}
-
 
 .menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -159,7 +149,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: auto;
+  padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -171,58 +161,56 @@ section {
 }
 
 /* PROFILE SECTION */
+
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 90vh;
-  }
+  height: 80vh;
+}
 
-  .section__pic-container img {
-    border-radius: 50px; /* Curves the edges of the image */
-    display: flex;
-  height: 450px;
-  width: 350px;
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
   margin: auto 0;
-  }
-  
- 
-  
-  .section__text {
+}
+
+.section__text {
   align-self: center;
   text-align: center;
-  }
-  
-  .section__text p {
+}
+
+.section__text p {
   font-weight: 600;
-  }
-  
-  .section__text__p1 {
+}
+
+.section__text__p1 {
   text-align: center;
-  }
-  
-  .section__text__p2 {
+}
+
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  }
-  
-  .title {
-  font-size: 4rem;
+}
+
+.title {
+  font-size: 4.5rem;
   text-align: center;
-  }
-  
-  #socials-container {
+}
+
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
-  }
+}
 
 /* ICONS */
 
 .icon {
   cursor: pointer;
-  height: 3rem;
+  height: 2rem;
 }
 
 /* BUTTONS */
@@ -230,14 +218,14 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 10rem;
+  width: 8rem;
   border-radius: 2rem;
 }
 
@@ -296,9 +284,7 @@ section {
 }
 
 .about-pic {
-  border-radius: 20px;  /* Maintaining the curved edges */
-  height: 500px;        /* Set the desired height */
-  width: auto;          /* Width adjusts automatically to maintain aspect ratio */
+  border-radius: 2rem;
 }
 
 .arrow {
@@ -380,7 +366,6 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  object-fit: cover;
   width: 90%;
   height: 90%;
 }
@@ -391,59 +376,8 @@ article .icon {
 }
 
 .project-btn {
-  color: rgb(0, 0, 0);
-  border-color: rgb(226, 225, 225);
-}
-
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 50vh;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  color: black;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 2vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
 }
 
 /* Certificates */
@@ -484,8 +418,92 @@ footer p {
   margin-top: 10px; /* Space above the button */
 }
 
+/* CONTACT */
 
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
 
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
 
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
 
+.contact-info-container p {
+  font-size: larger;
+}
 
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+nav,
+.nav-links2 {
+  display: flex;
+ 
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links2 {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
